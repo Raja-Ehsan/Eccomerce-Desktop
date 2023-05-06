@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.clothingController">
+   <children>
+      <AnchorPane layoutX="-2.0" prefHeight="66.0" prefWidth="612.0" styleClass="bodybig" stylesheets="@style.css">
+         <children>
+            <Label layoutX="2.0" layoutY="-2.0" prefHeight="78.0" prefWidth="766.0" style="-fx-background-color: #bdbdc9;" />
+            <ImageView fx:id="easy_shop_borderImageView" fitHeight="88.0" fitWidth="175.0" layoutX="2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Image/easy_shop_border.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="289.0" layoutY="9.0" prefHeight="54.0" prefWidth="190.0" text="Clothing" textFill="#505050">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="35.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="617.0" layoutY="18.0" mnemonicParsing="false" onAction="#b_action" prefHeight="32.0" prefWidth="104.0" style="-fx-background-color: #505050;" text="Back " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      
+      <CheckBox fx:id="s_chk" layoutX="137.0" layoutY="122.0" mnemonicParsing="false" onAction="#s_chk_action" text="Shirt">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="sn_chk" layoutX="137.0" layoutY="313.0" mnemonicParsing="false" onAction="#sn_chk_action" text="Sneakers">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="j_chk" layoutX="137.0" layoutY="250.0" mnemonicParsing="false" onAction="#j_chk_action" text="Jacket">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="t_chk" layoutX="137.0" layoutY="190.0" mnemonicParsing="false" onAction="#t_chk_action" text="Trouser">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="650.0" layoutY="120.0" mnemonicParsing="false" onAction="#s_increment" prefHeight="25.0" prefWidth="38.0" text="+" />
+      <Button layoutX="650.0" layoutY="188.0" mnemonicParsing="false" onAction="#t_increment" prefHeight="25.0" prefWidth="38.0" text="+" />
+      <Button layoutX="650.0" layoutY="248.0" mnemonicParsing="false" onAction="#j_increment" prefHeight="25.0" prefWidth="38.0" text="+" />
+      <Button layoutX="651.0" layoutY="308.0" mnemonicParsing="false" onAction="#sn_increment" prefHeight="25.0" prefWidth="38.0" text="+" />
+      <Button layoutX="592.0" layoutY="120.0" mnemonicParsing="false" onAction="#s_decrement" prefHeight="25.0" prefWidth="38.0" text="-" />
+      <Button layoutX="592.0" layoutY="188.0" mnemonicParsing="false" onAction="#t_decrement" prefHeight="25.0" prefWidth="38.0" text="-" />
+      <Button layoutX="592.0" layoutY="248.0" mnemonicParsing="false" onAction="#j_decrement" prefHeight="25.0" prefWidth="38.0" text="-" />
+      <Button layoutX="592.0" layoutY="311.0" mnemonicParsing="false" onAction="#sn_decrement" prefHeight="25.0" prefWidth="38.0" text="-" />
+      <Label fx:id="s_count" alignment="CENTER" layoutX="630.0" layoutY="124.0" prefHeight="17.0" prefWidth="20.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="t_count" alignment="CENTER" layoutX="631.0" layoutY="192.0" prefHeight="17.0" prefWidth="20.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="j_count" alignment="CENTER" layoutX="631.0" layoutY="249.0" prefHeight="17.0" prefWidth="20.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="sn_count" alignment="CENTER" layoutX="631.0" layoutY="312.0" prefHeight="17.0" prefWidth="20.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="t_label" alignment="CENTER" layoutX="322.0" layoutY="412.0" prefHeight="25.0" prefWidth="117.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="not_label" alignment="CENTER" layoutX="322.0" layoutY="447.0" prefHeight="17.0" prefWidth="117.0" textFill="RED" />
+      <Button layoutX="331.0" layoutY="478.0" mnemonicParsing="false" onAction="#o_action" prefHeight="32.0" prefWidth="104.0" style="-fx-background-color: green;" text="Order" textFill="WHITE" />
+      <Label fx:id="order_success" alignment="CENTER" layoutX="259.0" layoutY="367.0" prefHeight="35.0" prefWidth="244.0" textFill="#3da12b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="s_size" layoutX="343.0" layoutY="120.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="85.0" text="Size" textAlignment="CENTER">
+        <items>
+          <MenuItem fx:id="s_small" mnemonicParsing="false" onAction="#s_small_action" text="Small" />
+          <MenuItem fx:id="s_medium" mnemonicParsing="false" onAction="#s_medium_action" text="Medium" />
+            <MenuItem fx:id="s_large" mnemonicParsing="false" onAction="#s_large_action" text="Large" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="t_size" layoutX="343.0" layoutY="188.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="85.0" text="Size">
+         <items>
+            <MenuItem fx:id="t_small" mnemonicParsing="false" onAction="#t_small_action" text="Small" />
+            <MenuItem fx:id="t_medium" mnemonicParsing="false" onAction="#t_medium_action" text="Medium" />
+            <MenuItem fx:id="t_large" mnemonicParsing="false" onAction="#t_large_action" text="Large" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="j_size" layoutX="343.0" layoutY="248.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="85.0" text="Size">
+         <items>
+            <MenuItem fx:id="j_small" mnemonicParsing="false" onAction="#j_small_action" text="Small" />
+            <MenuItem fx:id="j_medium" mnemonicParsing="false" onAction="#j_medium_action" text="Medium" />
+            <MenuItem fx:id="j_large" mnemonicParsing="false" onAction="#j_large_action" text="Large" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="sn_size" layoutX="343.0" layoutY="311.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="85.0" text="Size">
+         <items>
+            <MenuItem fx:id="sn_small" mnemonicParsing="false" onAction="#sn_small_action" text="Small" />
+            <MenuItem fx:id="sn_medium" mnemonicParsing="false" onAction="#sn_medium_action" text="Medium" />
+            <MenuItem fx:id="sn_large" mnemonicParsing="false" onAction="#sn_large_action" text="Large" />
+         </items>
+      </MenuButton>
+      <ImageView fx:id="shirtImageView" fitHeight="44.0" fitWidth="76.0" layoutX="25.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/shirt.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="trouserImageView" fitHeight="62.0" fitWidth="73.0" layoutX="30.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/trouser.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="jacketImageView" fitHeight="54.0" fitWidth="58.0" layoutX="34.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/Jacket.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sneakersImageView" fitHeight="54.0" fitWidth="54.0" layoutX="34.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/Sneakers.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

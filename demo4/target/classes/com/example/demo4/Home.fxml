@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="623.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.HomeController">
+   <children>
+      <AnchorPane layoutY="78.0" prefHeight="48.0" prefWidth="766.0">
+         <children>
+            <Button fx:id="homeButton" contentDisplay="BOTTOM" layoutX="-1.0" mnemonicParsing="false" onAction="#homeButtonOnAction" prefHeight="86.0" prefWidth="221.0" style="-fx-background-color: #505050;" text="Home" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Demibold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Hyperlink fx:id="logOutLink" layoutX="669.0" layoutY="13.0" onAction="#goToLoginForm" text="Logout" />
+         </children>
+      </AnchorPane>
+      <Label prefHeight="78.0" prefWidth="766.0" style="-fx-background-color: #bdbdc9;" />
+      <Button fx:id="cartButton" contentDisplay="BOTTOM" layoutX="698.0" layoutY="16.0" minWidth="40.0" mnemonicParsing="false" onAction="#cartButtonOnAction" prefHeight="30.0" prefWidth="54.0" style="-fx-background-color: #505050;" text="🛒" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Demibold Italic" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="easy_shop_borderImageView" fitHeight="88.0" fitWidth="175.0" layoutX="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/easy_shop_border.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="borderImageView" fitHeight="78.0" fitWidth="219.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/border.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="609.0" layoutY="16.0" prefHeight="30.0" prefWidth="88.0" text="Shopping Cart" />
+      <MenuButton fx:id="categoryButton" alignment="CENTER" layoutX="-1.0" layoutY="171.0" mnemonicParsing="false" onAction="#categoryButtonOnAction" prefHeight="86.0" prefWidth="221.0" style="-fx-background-color: #505050;" text="Categories" textAlignment="CENTER" textFill="WHITE">
+        <items>
+          <MenuItem fx:id="clothingMenu" mnemonicParsing="false" onAction="#openClothing" text="Clothing" />
+          <MenuItem mnemonicParsing="false" onAction="#openElectronics" text="Electronics" />
+            <MenuItem mnemonicParsing="false" onAction="#openbooks" text="Books" />
+            <MenuItem mnemonicParsing="false" onAction="#openHouseHold" text="House Hold" />
+        </items>
+      </MenuButton>
+      <Separator layoutX="220.0" layoutY="79.0" orientation="VERTICAL" prefHeight="542.0" prefWidth="2.0" />
+      <Button fx:id="manufacturerButton" contentDisplay="BOTTOM" layoutX="-2.0" layoutY="265.0" mnemonicParsing="false" onAction="#manufacturerButtonOnAction" prefHeight="86.0" prefWidth="222.0" style="-fx-background-color: #505050;" text="Manufacturers" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Demibold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="221.0" layoutY="125.0" prefHeight="78.0" prefWidth="546.0" style="-fx-background-color: #505050;" text="Top Products" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="oppoImageView" fitHeight="128.0" fitWidth="175.0" layoutX="256.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/OppoA16.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="256.0" layoutY="375.0" prefHeight="25.0" prefWidth="175.0" text="Oppo A16" />
+      <ImageView fx:id="helmetImageView" fitHeight="128.0" fitWidth="175.0" layoutX="551.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/DoubleVisorHelmet.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="551.0" layoutY="375.0" prefHeight="25.0" prefWidth="175.0" text="Double Visor Helmet" />
+      <ImageView fx:id="bottleImageView" fitHeight="128.0" fitWidth="189.0" layoutX="282.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/StealBottle.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="256.0" layoutY="565.0" prefHeight="25.0" prefWidth="175.0" text="Steal Bottle" />
+      <ImageView fx:id="harry_potterImageView" fitHeight="128.0" fitWidth="150.0" layoutX="597.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/harry_potter_novel.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="551.0" layoutY="565.0" prefHeight="25.0" prefWidth="175.0" text="Harry Potter " />
+   </children>
+</AnchorPane>

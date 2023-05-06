@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.ElectronicsController">
+   <children>
+      <AnchorPane layoutX="-2.0" prefHeight="66.0" prefWidth="612.0" styleClass="bodybig" stylesheets="@style.css">
+         <children>
+            <Label layoutX="-1.0" layoutY="-2.0" prefHeight="78.0" prefWidth="766.0" style="-fx-background-color: #bdbdc9;" />
+            <ImageView fx:id="easy_shop_borderImageView" fitHeight="88.0" fitWidth="175.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Image/easy_shop_border.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="285.0" layoutY="15.0" prefHeight="44.0" prefWidth="196.0" text="Electronics" textFill="#505050">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="35.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="613.0" layoutY="21.0" mnemonicParsing="false" onAction="#b_action" prefHeight="32.0" prefWidth="104.0" style="-fx-background-color: #505050;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      
+      <CheckBox fx:id="s_chk" layoutX="145.0" layoutY="123.0" mnemonicParsing="false" text="Headphone">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="sn_chk" layoutX="145.0" layoutY="325.0" mnemonicParsing="false" text="Oppo A16">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="j_chk" layoutX="146.0" layoutY="259.0" mnemonicParsing="false" text="Arduino">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="t_chk" layoutX="144.0" layoutY="192.0" mnemonicParsing="false" text="Charger">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="553.0" layoutY="119.0" mnemonicParsing="false" onAction="#s_increment" prefHeight="25.0" prefWidth="38.0" text="+" />
+      <Button layoutX="552.0" layoutY="190.0" mnemonicParsing="false" onAction="#t_increment" prefHeight="25.0" prefWidth="38.0" text="+" />
+      <Button layoutX="553.0" layoutY="256.0" mnemonicParsing="false" onAction="#j_increment" prefHeight="25.0" prefWidth="38.0" text="+" />
+      <Button layoutX="553.0" layoutY="322.0" mnemonicParsing="false" onAction="#sn_increment" prefHeight="25.0" prefWidth="38.0" text="+" />
+      <Button layoutX="495.0" layoutY="119.0" mnemonicParsing="false" onAction="#s_decrement" prefHeight="25.0" prefWidth="38.0" text="-" />
+      <Button layoutX="494.0" layoutY="190.0" mnemonicParsing="false" onAction="#t_decrement" prefHeight="25.0" prefWidth="38.0" text="-" />
+      <Button layoutX="495.0" layoutY="256.0" mnemonicParsing="false" onAction="#j_decrement" prefHeight="25.0" prefWidth="38.0" text="-" />
+      <Button layoutX="495.0" layoutY="322.0" mnemonicParsing="false" onAction="#sn_decrement" prefHeight="25.0" prefWidth="38.0" text="-" />
+      <Label fx:id="s_count" alignment="CENTER" layoutX="533.0" layoutY="123.0" prefHeight="17.0" prefWidth="20.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="t_count" alignment="CENTER" layoutX="532.0" layoutY="194.0" prefHeight="17.0" prefWidth="20.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="j_count" alignment="CENTER" layoutX="533.0" layoutY="260.0" prefHeight="17.0" prefWidth="20.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="sn_count" alignment="CENTER" layoutX="533.0" layoutY="326.0" prefHeight="17.0" prefWidth="20.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="t_label" alignment="CENTER" layoutX="321.0" layoutY="415.0" prefHeight="25.0" prefWidth="117.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="not_label" alignment="CENTER" layoutX="321.0" layoutY="443.0" prefHeight="17.0" prefWidth="117.0" textFill="RED" />
+      <Button layoutX="328.0" layoutY="472.0" mnemonicParsing="false" onAction="#o_action" prefHeight="32.0" prefWidth="104.0" style="-fx-background-color: green;" text="Order" textFill="WHITE" />
+      <Label fx:id="order_success" alignment="CENTER" layoutX="258.0" layoutY="376.0" prefHeight="35.0" prefWidth="244.0" textFill="#3da12b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="headphoneImageView" fitHeight="63.0" fitWidth="92.0" layoutX="31.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/headphone.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chargerImageView" fitHeight="57.0" fitWidth="63.0" layoutX="33.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/charger.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="arduinoImageView" fitHeight="63.0" fitWidth="63.0" layoutX="31.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/Arduino_Uno.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mobileImageView" fitHeight="57.0" fitWidth="63.0" layoutX="31.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/OppoA16.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.CartController">
+   <children>
+      <TableView fx:id="product_table" layoutX="68.0" layoutY="93.0" prefHeight="442.0" prefWidth="635.0">
+         <columns>
+            <TableColumn fx:id="product" prefWidth="160.0" text="Order_id" />
+            <TableColumn fx:id="quantity" prefWidth="160.0" text="Product_Name" />
+            <TableColumn fx:id="price" prefWidth="160.0" text="Price " />
+            <TableColumn fx:id="manufacturer" prefWidth="160.0" text="Category" />
+         </columns>
+      </TableView>
+      <Button fx:id="back_to" layoutX="23.0" layoutY="570.0" mnemonicParsing="false" onAction="#back_to_main" style="-fx-background-color: #7e7777;" text="Main Menu" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="177.0" prefHeight="78.0" prefWidth="382.0" style="-fx-background-color: #bdbdc9;" />
+      <ImageView fx:id="easy_shop_borderImageView" fitHeight="88.0" fitWidth="175.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/easy_shop_border.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="borderImageView" fitHeight="78.0" fitWidth="219.0" layoutX="561.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/border.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="229.0" layoutY="9.0" prefHeight="60.0" prefWidth="313.0" text="My Orders">
+         <font>
+            <Font name="Bodoni MT Black" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

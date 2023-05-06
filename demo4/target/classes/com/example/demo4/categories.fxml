@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="623.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.HomeController">
+   <children>
+      <AnchorPane layoutY="78.0" prefHeight="48.0" prefWidth="766.0">
+         <children>
+            <Button contentDisplay="BOTTOM" layoutX="-1.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="221.0" style="-fx-background-color: #505050;" text="Home" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Demibold Roman" size="12.0" />
+               </font>
+            </Button>
+            <Hyperlink layoutX="669.0" layoutY="13.0" text="Logout" />
+         </children>
+      </AnchorPane>
+      <Label prefHeight="78.0" prefWidth="766.0" style="-fx-background-color: #bdbdc9;" />
+      <ImageView fitHeight="88.0" fitWidth="175.0" layoutX="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/easy_shop_border.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="78.0" fitWidth="219.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/border.png" />
+         </image>
+      </ImageView>
+      <MenuButton alignment="CENTER" layoutX="-1.0" layoutY="171.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="221.0" style="-fx-background-color: #505050;" text="Categories" textAlignment="CENTER" textFill="WHITE">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+         </items>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </MenuButton>
+      <Separator layoutX="220.0" layoutY="79.0" orientation="VERTICAL" prefHeight="542.0" prefWidth="2.0" />
+      <Button contentDisplay="BOTTOM" layoutX="-2.0" layoutY="265.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="222.0" style="-fx-background-color: #505050;" text="Manufacturers" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Demibold Roman" size="12.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="221.0" layoutY="125.0" prefHeight="78.0" prefWidth="546.0" style="-fx-background-color: #505050;" text="Name of Category" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="23.0" />
+         </font>
+      </Label>
+      <Button contentDisplay="BOTTOM" layoutX="697.0" layoutY="14.0" minWidth="40.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="54.0" style="-fx-background-color: #505050;" text="🛒" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Demibold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="608.0" layoutY="14.0" prefHeight="36.0" prefWidth="88.0" text="Shopping Cart" />
+      <TableView layoutX="235.0" layoutY="219.0" prefHeight="386.0" prefWidth="518.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Product" />
+          <TableColumn prefWidth="75.0" text="Price" />
+            <TableColumn prefWidth="75.0" text="C2" />
+            <TableColumn prefWidth="75.0" text="C2" />
+            <TableColumn prefWidth="75.0" text="C2" />
+            <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+         <stylesheets>
+            <URL value="@../../../../../Downloads/util.css" />
+            <URL value="@../../../../../Downloads/main.css" />
+         </stylesheets>
+      </TableView>
+   </children>
+</AnchorPane>

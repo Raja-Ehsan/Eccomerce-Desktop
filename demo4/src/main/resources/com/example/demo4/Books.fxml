@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="649.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.BooksController">
+   <children>
+      
+      <CheckBox fx:id="h_chk" layoutX="97.0" layoutY="113.0" mnemonicParsing="false" text="Harry Potter">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="a_chk" layoutX="95.0" layoutY="435.0" mnemonicParsing="false" text="Allama-Iqbal">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="s_chk" layoutX="97.0" layoutY="319.0" mnemonicParsing="false" text="Shakespeare">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="r_chk" layoutX="97.0" layoutY="221.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="84.0" text="Rumi">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="653.0" layoutY="111.0" mnemonicParsing="false" onAction="#h_increment" prefHeight="25.0" prefWidth="38.0" text="+" />
+      <Button layoutX="653.0" layoutY="206.0" mnemonicParsing="false" onAction="#r_increment" prefHeight="25.0" prefWidth="38.0" text="+" />
+      <Button layoutX="653.0" layoutY="300.0" mnemonicParsing="false" onAction="#s_increment" prefHeight="25.0" prefWidth="38.0" text="+" />
+      <Button layoutX="653.0" layoutY="396.0" mnemonicParsing="false" onAction="#a_increment" prefHeight="25.0" prefWidth="38.0" text="+" />
+      <Button layoutX="595.0" layoutY="111.0" mnemonicParsing="false" onAction="#h_decrement" prefHeight="25.0" prefWidth="38.0" text="-" />
+      <Button layoutX="595.0" layoutY="206.0" mnemonicParsing="false" onAction="#r_decrement" prefHeight="25.0" prefWidth="38.0" text="-" />
+      <Button layoutX="595.0" layoutY="300.0" mnemonicParsing="false" onAction="#s_decrement" prefHeight="25.0" prefWidth="38.0" text="-" />
+      <Button layoutX="595.0" layoutY="396.0" mnemonicParsing="false" onAction="#a_decrement" prefHeight="25.0" prefWidth="38.0" text="-" />
+      <Label fx:id="h_count" alignment="CENTER" layoutX="633.0" layoutY="115.0" prefHeight="17.0" prefWidth="20.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="r_count" alignment="CENTER" layoutX="633.0" layoutY="211.0" prefHeight="17.0" prefWidth="20.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="s_count" alignment="CENTER" layoutX="633.0" layoutY="304.0" prefHeight="17.0" prefWidth="20.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="a_count" alignment="CENTER" layoutX="633.0" layoutY="400.0" prefHeight="17.0" prefWidth="20.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="t_label" alignment="CENTER" layoutX="304.0" layoutY="500.0" prefHeight="25.0" prefWidth="117.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="not_label" alignment="CENTER" layoutX="411.0" layoutY="513.0" prefHeight="17.0" prefWidth="117.0" textFill="RED" />
+      <Button layoutX="610.0" layoutY="549.0" mnemonicParsing="false" onAction="#o_action" prefHeight="32.0" prefWidth="104.0" style="-fx-background-color: green;" text="Order" textFill="WHITE" />
+      <ImageView fx:id="harrypotter_ImageView" fitHeight="104.0" fitWidth="84.0" layoutX="319.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/harry_potter_novel.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rumi_imageview" fitHeight="98.0" fitWidth="67.0" layoutX="319.0" layoutY="179.0">
+         <image>
+            <Image url="@../../../../../../../../Desktop/976565.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="shakespeare_imageview" fitHeight="98.0" fitWidth="67.0" layoutX="319.0" layoutY="280.0">
+         <image>
+            <Image url="@../../../../../../../../Desktop/b164aa10953207.560ef1bcba0e7.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="allamaiqbal_imageview" fitHeight="104.0" fitWidth="68.0" layoutX="319.0" layoutY="383.0">
+         <image>
+            <Image url="@../../../../../../../../Desktop/NIB-0022-1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="3.0" prefHeight="78.0" prefWidth="766.0" style="-fx-background-color: #bdbdc9;" text="Books" />
+      <ImageView fx:id="easy_shop_borderImageView" fitHeight="88.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Image/easy_shop_border.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" layoutX="627.0" layoutY="23.0" mnemonicParsing="false" onAction="#b_action" prefHeight="32.0" prefWidth="104.0" style="-fx-background-color: #505050;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="274.0" layoutY="17.0" prefHeight="44.0" prefWidth="196.0" text="Books" textFill="#505050">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
